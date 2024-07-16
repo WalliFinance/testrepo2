@@ -1,0 +1,34 @@
+$s1: hsl(20, 50%, 98%);
+$s2: hsl(13, 31%, 94%);
+$s3:hsl(14, 25%, 72%);
+$s4:hsl(7, 20%, 60%);
+$s5:hsl(12, 20%, 44%);
+$s6:hsl(14, 65%, 9%);
+$sucess:hsl(159, 69%, 38%);
+$fail:hsl(14, 86%, 42%);
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../public/RedHatText-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src: url('../public/RedHatText-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../public/RedHatText-Bold.ttf');
+}
+
+.main{
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $s2;
+    h1{
+    font-family: 'Bold';  
+    color: $s6; 
+    }
+}

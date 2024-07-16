@@ -1,0 +1,107 @@
+$s1: hsl(20, 50%, 98%);
+$s2: hsl(13, 31%, 94%);
+$s3:hsl(14, 25%, 72%);
+$s4:hsl(7, 20%, 60%);
+$s5:hsl(12, 20%, 44%);
+$s6:hsl(14, 65%, 9%);
+$sucess:hsl(159, 69%, 38%);
+$fail:hsl(14, 86%, 42%);
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../../public/RedHatText-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src: url('../../public/RedHatText-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../../public/RedHatText-Bold.ttf');
+}
+
+.flexContainer{
+    margin-top: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .container{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    
+        .imageContainer{
+        position: relative;
+        width: max-content;
+        margin-bottom: 30px;
+            img{
+            border-radius: 20px;
+            object-fit: cover;
+            }
+    
+          .hiddingControllers{
+            button{
+                background-color: $s1;
+                cursor: pointer;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                padding: 8px 24px;
+                left: 20%;
+                top: 90%;
+                border: 1px solid $s6;
+                border-radius: 30px;
+            }
+
+           .inputContainer{
+            background-color: $fail;
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            position: absolute;
+            left: 20%;
+            top: 90.5%;
+            border-radius: 30px;
+            padding: 12px 24px;
+            input[type='number']{
+                appearance: none;
+                text-align: center;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                width: 40px;
+            }
+
+            img{
+                border: 2px solid $s3;
+                padding: 4px;
+                cursor: pointer;
+            }
+           }
+          }
+        }
+    
+        .itemDetails{
+            h5{
+            font-family: 'Semibold';
+            color: $s4;
+            }
+    
+            h4{
+            font-family: 'Bold';
+            color: $s6;
+            }
+    
+            span{
+            font-family: 'Regular';
+            color: $fail;
+            }
+        }
+    }
+}
